@@ -1,0 +1,54 @@
+.app {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.notification {
+    border: 1px solid #000;
+    background-color: #fff;
+    height: 50px;
+    width: 250px;
+    position: fixed;
+    right: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px #000;
+}
+
+.visible {
+    bottom: 10px;
+    transition: bottom 0.5s linear;
+}
+.hidden {
+    bottom: -200px;
+    transition: bottom 0.5s linear;
+}
+
+.table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+td:hover {
+    background-color: aqua;
+}
+td:hover .tooltip {
+    visibility: visible;
+}
